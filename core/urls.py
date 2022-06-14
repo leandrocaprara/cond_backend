@@ -5,10 +5,13 @@ from rest_framework_simplejwt.views import (TokenObtainPairView)
 from rest_framework import routers
 
 from users.urls import users_router
+from condominium.urls import condominium_router
 
 router = routers.DefaultRouter()
 #Users
 router.registry.extend(users_router.registry)
+#Condominium
+router.registry.extend(condominium_router.registry)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
