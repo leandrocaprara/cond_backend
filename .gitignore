@@ -20,4 +20,5 @@ venv.bak/
 *.pot
 *.pyc
 __pycache__
+*__.py
 media
