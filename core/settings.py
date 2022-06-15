@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     #apps
     'users',
     'condominium',
+    'building',
 ]
 
 MIDDLEWARE = [
