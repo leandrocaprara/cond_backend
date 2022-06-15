@@ -7,6 +7,7 @@ from rest_framework import routers
 from users.urls import users_router
 from condominium.urls import condominium_router
 from building.urls import (building_router, floor_router, apartment_router)
+from installations.urls import (installation_router)
 
 router = routers.DefaultRouter()
 #Users
@@ -19,6 +20,9 @@ router.registry.extend(condominium_router.registry)
 router.registry.extend(building_router.registry)
 router.registry.extend(floor_router.registry)
 router.registry.extend(apartment_router.registry)
+
+#Installation
+router.registry.extend(installation_router.registry)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
