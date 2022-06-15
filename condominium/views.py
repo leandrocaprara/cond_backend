@@ -3,6 +3,7 @@ from rest_framework import permissions, viewsets
 from django_filters.rest_framework import DjangoFilterBackend
 from .models import *
 from .serializers import *
+
 # Create your views here.
 
 class CondominiumViewSet(viewsets.ModelViewSet):

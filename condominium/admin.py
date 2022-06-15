@@ -1,3 +1,5 @@
 from django.contrib import admin
 
-# Register your models here.
+from condominium.models import Condominium
+
+admin.site.register(Condominium)
